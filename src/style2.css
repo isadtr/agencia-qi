@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Reem+Kufi+Fun&display=swap');
+
+:root {
+    --cor-primaria: #333;
+    --cor-secundaria:#fbc206;
+    --cor-terciaria:#aaaaaa ;
+    --cor-hover: #505050;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color:var(--cor-terciaria);
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content:center;
+    padding: 2% 0% 6% 4%;
+}
+
+.lista-navegacao{
+    display: flex;
+    gap: 80px;
+}
+.link-navegacao {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:   var(--cor-hover);
+    text-decoration: none;
+    position: relative;
+}
+.link-navegacao::after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-secundaria);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    text-decoration: none;
+}
+
+.link-navegacao:hover::after{
+    width: 100%;
+    left: 0;
+}
+.titulo-destaque {
+    padding: 0% 0% 0% 10%;
+    color:#aaaaaa;
+    font-family:var(--fonte-principal);
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.agenciaqi {
+    width:70%;
+    padding:0% 0% 0% 10%;
+}
+.apresentacao-conteudo-titulo {
+    padding: 0% 0% 0% 10%;
+    font-size: 2rem;
+    font-family: var(--fonte-principal);
+    color:#aaaaaa;
+    margin-left: 80px;
+}
+.botao-portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-secundaria);
+    background-color: #fbc206;
+    width: 70%;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    padding: 20px 10px;
+    text-decoration: none;
+    color:   var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    transition: all 1s;
+    cursor: pointer;
+    margin-top: 150px;
+    margin-left: 0px;
+}
+
+.botao-portfolio:hover {
+    -webkit-transform: scale(1);
+    transform: scale(0.9);
+}
+
+.img-fluid{
+    width: 100%;
+    padding: 10% 0% 10% 0%;
+    height: auto;
+}
+
+.container{
+    margin-left: 60px;
+}
+.foto{
+    border-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: all 2s;
+    cursor: default;
+    width: 80%;
+    padding: 0% 0% 10% 0%;
+}
+    
+.sobre {
+    margin-top: 180px;
+    font-size: 2.5rem;
+    font-family: var(--fonte-principal);
+    color:#aaaaaa;
+    margin-bottom: 50px;
+}
+
+.sobremim{
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+    color:#aaaaaa;
+}
+.container2 {
+    background-color: var(--cor-secundaria);
+    border-radius: 40px;
+    margin:0%;
+    padding-left: 30px;
+    
+}
+
+.sobrecliente{
+    margin-top: 180px;
+    font-size: 2.5rem;
+    font-family: var(--fonte-principal);
+    color:var(--cor-primaria);
+    margin-bottom: 50px;
+}
+.cliente{
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+    color:var(--cor-primaria);
+}
+.foto-cliente{
+    border-radius: 40px;
+    transition: all 2s;
+    cursor: default;
+    width: 150%;
+    margin-left: 10px;
+}
+
+.container3 {
+    padding: 10% 0% 0% 10%;
+}
+.rodape {
+    background-color:var(--cor-terciaria);
+    color: var(--cor-hover);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 600px;
+}
+
+@media (max-width: 1200px){
+    
+    .navbar {
+        padding: 20% 0% 0% 20%;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .links-navegacacao {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .agenciaqi {
+        width: 100%;
+        padding: 0% 0% 0% 30%;
+        }
+
+    .botao-portfolio{
+        width: auto;
+        padding: 30% 30% 30% 30%;
+
+
+    }
+   
+}
